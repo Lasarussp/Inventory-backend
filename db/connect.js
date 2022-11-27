@@ -9,7 +9,7 @@
     }
  };
  
- mongoose.connection.off('disconnected',() => {
+ mongoose.connection.on('disconnected',() => {
     console.log("mongodb disconnected ❌")
  });
  mongoose.connection.on('connected',() => {
