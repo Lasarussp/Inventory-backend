@@ -1,20 +1,17 @@
+import express from 'express';
 import mongoose from 'mongoose';
 
-//Schema definition:
-
 const ClientSchema = mongoose.Schema({
-    name: String,
-    email: String,
-    Phone: String,
-    address: String,
-    userId: [String],
-    createAt: {
-        type: Date,
-        default: new Date(),
-    },
+  name: String,
+  email: String,
+  phone: String,
+  address: String,
+  userId: [String],
+  createdAt: {
+    type: Date,
+    default: new Date(),
+  },
 });
-
-//model schema using the schema defined
 
 const ClientModel = mongoose.model('ClientModel', ClientSchema);
 export default ClientModel;
