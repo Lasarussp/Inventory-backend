@@ -2,11 +2,8 @@ import mongoose from 'mongoose';
 
 //Schema definition: 
 
-const ProfileSchema = new mongoose.Schema({
-    name: {
-    type: String,
-    required: true,
-    },
+const ProfileSchema = mongoose.Schema({
+    name: String,
     email: {
         type: String,
         required: true,
@@ -14,15 +11,12 @@ const ProfileSchema = new mongoose.Schema({
     },
     phoneNumber: {
         type: String,
-        required: true,
     },
     businessName: {
         type: String,
-        required: true,
     },
     paymentDetails: {
         type: String,
-        required: true,
     },
     logo: String,
     website: String,
@@ -32,5 +26,5 @@ const ProfileSchema = new mongoose.Schema({
 
 //model schema using the schema defined
 
-const ProfileModel = mongoose.model('ProfileModel', ProfileSchema);
-export default ProfileModel;
+const Profile = mongoose.model('Profile', ProfileSchema);
+export default Profile;

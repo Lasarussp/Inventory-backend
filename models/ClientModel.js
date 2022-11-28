@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 //Schema definition:
 
-const ClientSchema = new mongoose.Schema({
+const ClientSchema = mongoose.Schema({
     name: String,
     email: String,
     Phone: String,

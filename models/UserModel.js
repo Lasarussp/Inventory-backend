@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 //Schema definition:
 
-const userSchema = new mongoose.Schema({
+const userSchema = mongoose.Schema({
     name: {
         type: String,
         required: true,
@@ -26,5 +26,5 @@ const userSchema = new mongoose.Schema({
 
 //model schema using the schema defined
 
-const UserModel = mongoose.Schema('UserModel', userSchema);
-export default UserModel;
+const User = mongoose.Schema('User', userSchema);
+export default User;
