@@ -117,7 +117,7 @@ export const forgetPassword = (req,res) => {
             .then((result) => {
                 transporter.sendMail({ 
                     to:user.email,
-                    from: 'BoB`s Invoice <hi@invoice.com>',
+                    from: 'BoB`sinvoice <hello@invoicebill.com>',
                     subject: 'Password reset request',
                     html: `
                            <p>You requested for password rest from arc Invoicing Application</p>
