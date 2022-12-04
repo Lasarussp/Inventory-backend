@@ -33,6 +33,17 @@ export const getInvoices = async (req,res) => {
     }
 };
 
+export const createInvoice = async (req, res) => {
+    const invoice = req.body;
+    const newInvoice = new InvoiceModel(invoice);
+    try {
+      await newInvoice.save();
+      res.status(201).json(newInvoice);
+    } catch (error) {
+      res.status(409).json(error.message);
+    }
+  };
+
 export const getInvoice = async (req,res) => {
     const { id } = req.body;
     try {
