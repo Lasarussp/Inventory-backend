@@ -60,7 +60,7 @@
       });
 
       const mail = {
-        from: `BoB's Invoice <hi@invoicebill.com`, // ==> sender address
+        from: `BoB'sinvoice <hello@invoicebill.com>`, // ==> sender address
         to: `${ email }`, // ==> list receiver
         replyTo: `Invoice from ${
           company.bussinessName ? company.bussinessName : company.name
