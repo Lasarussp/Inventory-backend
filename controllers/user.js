@@ -121,9 +121,9 @@ export const forgetPassword = (req,res) => {
                     subject: 'Password reset request',
                     html: `
                            <p>You requested for password rest from arc Invoicing Application</p>
-                           <h5>Please click this <a href="https://netlify.app/reset/${token}">link</a>to reset your password</h5>
+                           <h5>Please click this <a href="https://mellifluous-taiyaki-eda97c.netlify.app/reset/${token}">link</a>to reset your password</h5>
                            <p>Link not clickable?, copy and paste the following url in your address bar.</p>
-                           <p>https://nelify.app/reset/${token}</p>
+                           <p>https://mellifluous-taiyaki-eda97c.netlify.app/reset/${token}</p>
                            <p>If this was a mistake ,just ignore this email and nothing will happen.</p>
                            `,
                 });
