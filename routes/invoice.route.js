@@ -16,5 +16,7 @@ router.get('/', getInvoicesByUser);  // to get a user invoice
 router.post('/', createInvoice); // to create a invoice
 router.put('/:id', updateInvoice); // to update a existing Invoice
 router.delete('/:id', deleteInvoice); // to delete a invoice
-
+//router.get('/',async (req,res) => {
+//  res.send(`hello`);
+//})
 export default router;

@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 
-import InvoiceModel from '../models/InvoiceModel.js';
+//import InvoiceModel from '../models/InvoiceModel.js';
+import InvoiceModel from '../models/InvoicesModel.js';
 
 export const getInvoicesByUser = async (req, res) => {
   const { searchQuery } = req.query;
@@ -14,6 +15,7 @@ export const getInvoicesByUser = async (req, res) => {
 
 export const getTotalCount = async (req, res) => {
   const { searchQuery } = req.query;
+ console.log(searchQuery);
   try {
     // const invoices = await InvoiceModel.find({ creator: searchQuery });
     const totalCount = await InvoiceModel.countDocuments({

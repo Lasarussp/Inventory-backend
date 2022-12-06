@@ -7,7 +7,7 @@
   import db from './db/connect.js';
   import nodemailer from 'nodemailer';
   import userRoutes from './routes/userRoutes.js';
-  import invoiceRouter from './routes/userRoutes.js';
+  import invoiceRouter from './routes/invoice.route.js';
   import clientRouter from './routes/clients.route.js';
   import profile from './routes/profile.route.js';
   import pdfTemplate from './documents/index.js';
