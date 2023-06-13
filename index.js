@@ -28,7 +28,6 @@
   db();
   
   //app.use(express.json());
-  
   // Middlewares
  
   app.use(express.json({ limit: '30mb', extented: true }));
